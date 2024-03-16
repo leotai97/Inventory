@@ -138,13 +138,14 @@ public static void ResetCredentials()
  MainWnd.SaveRegSetting("RememberCredentialsValue", "");
 }
 
-private String GetGPW()
+private string GetGPW()
 {
- String s;
+ string s;
 
- s = "asdfawe.afewadsfa";
+ s =  "asdfawe.afewadsfa";
  s += 10.ToString();
  s += "!@#$$";
+
  return s;
 }
 

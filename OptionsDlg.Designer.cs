@@ -34,6 +34,7 @@
       this.btnPicLoc = new System.Windows.Forms.Button();
       this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
       this.btnFileLoc = new System.Windows.Forms.Button();
+      this.btnDownload = new System.Windows.Forms.Button();
       this.txtInvFiles = new System.Windows.Forms.TextBox();
       this.label2 = new System.Windows.Forms.Label();
       this.btnClose = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
       this.label6 = new System.Windows.Forms.Label();
       this.txtDownload = new System.Windows.Forms.TextBox();
       this.label7 = new System.Windows.Forms.Label();
-      this.btnDownload = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // label1
@@ -83,6 +83,16 @@
       this.btnFileLoc.UseVisualStyleBackColor = true;
       this.btnFileLoc.Click += new System.EventHandler(this.btnFileLoc_Click);
       // 
+      // btnDownload
+      // 
+      this.btnDownload.Location = new System.Drawing.Point(539, 179);
+      this.btnDownload.Name = "btnDownload";
+      this.btnDownload.Size = new System.Drawing.Size(22, 23);
+      this.btnDownload.TabIndex = 10;
+      this.toolTip1.SetToolTip(this.btnDownload, "Choose Directory");
+      this.btnDownload.UseVisualStyleBackColor = true;
+      this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
+      // 
       // txtInvFiles
       // 
       this.txtInvFiles.Location = new System.Drawing.Point(15, 103);
@@ -103,19 +113,19 @@
       // btnClose
       // 
       this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-      this.btnClose.Location = new System.Drawing.Point(486, 256);
+      this.btnClose.Location = new System.Drawing.Point(245, 275);
       this.btnClose.Name = "btnClose";
       this.btnClose.Size = new System.Drawing.Size(75, 23);
-      this.btnClose.TabIndex = 13;
+      this.btnClose.TabIndex = 17;
       this.btnClose.Text = "Close";
       this.btnClose.UseVisualStyleBackColor = true;
       this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
       // 
       // label3
       // 
-      this.label3.Location = new System.Drawing.Point(12, 256);
+      this.label3.Location = new System.Drawing.Point(12, 246);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(418, 33);
+      this.label3.Size = new System.Drawing.Size(549, 26);
       this.label3.TabIndex = 12;
       this.label3.Text = "These directories are computer dependant so the program can work on several machi" +
     "nes in the network.";
@@ -166,23 +176,13 @@
       this.label7.TabIndex = 8;
       this.label7.Text = "Download Directory";
       // 
-      // btnDownload
-      // 
-      this.btnDownload.Location = new System.Drawing.Point(539, 179);
-      this.btnDownload.Name = "btnDownload";
-      this.btnDownload.Size = new System.Drawing.Size(22, 23);
-      this.btnDownload.TabIndex = 10;
-      this.toolTip1.SetToolTip(this.btnDownload, "Choose Directory");
-      this.btnDownload.UseVisualStyleBackColor = true;
-      this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
-      // 
       // OptionsDlg
       // 
       this.AcceptButton = this.btnClose;
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.CancelButton = this.btnClose;
-      this.ClientSize = new System.Drawing.Size(573, 296);
+      this.ClientSize = new System.Drawing.Size(573, 310);
       this.Controls.Add(this.btnDownload);
       this.Controls.Add(this.label6);
       this.Controls.Add(this.txtDownload);

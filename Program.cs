@@ -16,6 +16,7 @@ static void Main()
 
  Application.EnableVisualStyles();
  Application.SetCompatibleTextRenderingDefault(false);
+
  if (DB.Connect(true)==false) // user refused attempt to login
    return; 
 

@@ -44,6 +44,7 @@
       this.btnDiscord = new System.Windows.Forms.Button();
       this.btnLike = new System.Windows.Forms.Button();
       this.label11 = new System.Windows.Forms.Label();
+      this.label12 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // label1
@@ -100,7 +101,7 @@
       // 
       // label7
       // 
-      this.label7.Location = new System.Drawing.Point(12, 210);
+      this.label7.Location = new System.Drawing.Point(12, 254);
       this.label7.Name = "label7";
       this.label7.Size = new System.Drawing.Size(388, 277);
       this.label7.TabIndex = 6;
@@ -181,16 +182,25 @@
       // 
       this.label11.Location = new System.Drawing.Point(12, 152);
       this.label11.Name = "label11";
-      this.label11.Size = new System.Drawing.Size(388, 49);
+      this.label11.Size = new System.Drawing.Size(400, 38);
       this.label11.TabIndex = 15;
       this.label11.Text = "The program uses the LIKE SQL command for all text based searches.  The above URL" +
     " describes the LIKE command and how to use wildcards to search text.";
+      // 
+      // label12
+      // 
+      this.label12.Location = new System.Drawing.Point(12, 199);
+      this.label12.Name = "label12";
+      this.label12.Size = new System.Drawing.Size(388, 43);
+      this.label12.TabIndex = 16;
+      this.label12.Text = resources.GetString("label12.Text");
       // 
       // AboutDlg
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(426, 488);
+      this.ClientSize = new System.Drawing.Size(422, 543);
+      this.Controls.Add(this.label12);
       this.Controls.Add(this.label11);
       this.Controls.Add(this.btnLike);
       this.Controls.Add(this.btnDiscord);
@@ -239,5 +249,6 @@
     private System.Windows.Forms.Button btnDiscord;
     private System.Windows.Forms.Button btnLike;
     private System.Windows.Forms.Label label11;
+    private System.Windows.Forms.Label label12;
   }
 }

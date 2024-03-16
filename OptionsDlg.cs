@@ -28,7 +28,10 @@ public OptionsDlg(Form par)
 
 private void Init()
 {
- 
+ Random rnd;
+ string sr;
+ int i;
+
  InitializeComponent();
 
  txtPicLoc.Text = Globals.ImageDirectory;
